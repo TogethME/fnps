@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="jfast-context.xsd">
+
+	<!-- 数据源配置(不需要指定具体数据源) -->
+	<jdbc jdbc_user="root" 
+		jdbc_password="root"
+		jdbc_url="jdbc:mysql://localhost:3306/boom_shakalaka?characterEncoding=utf8"
+		jdbc_driver="com.mysql.jdbc.Driver"/>
+		
+	<!-- 以下三个分别是 开发模式/编码/跨域 配置 -->
+	<web develop_mode="true" 
+		encoding="UTF-8" 
+		cors_mode="true" />	
+
+	<!-- 开发者还可以在这里添加自定义配置信息，具体用法详见以后的文档 -->
+
+</context>
